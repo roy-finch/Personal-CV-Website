@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roy Finch</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body>
+    <script type="text/javascript" src="../js/showHide.js"></script>
+    <div class="top--1 nav-div">
+        <div class=" text-center p-9">
+            <a class="no-decor p-10 bg-color-purple" href="../index.html">Home</a>
+            <a class="no-decor p-10 bg-color-purple" href="../html/resume.html">Resume</a>
+            <a class="no-decor p-10 bg-color-purple" href="../html/projects.html">Projects</a>
+            <a class="no-decor p-10 bg-color-purple" href="../html/contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="main-div m-l-20 m-r-20 p-20">
+        <h1 class="text-center">Contact Me</h1>
+        <p class="text-center">Below is a form that can send me an email to contact me.</p>
+        <hr>
+        <div class="text-center">
+            <h2><b>Send me an email</b></h2>
+            <form class="text-center" action="php/email.php" method="POST">
+                <div class="b-1 b-style-solid b-blue">
+                    <p>If you would like to, use the form below to send me an email if you are interested in contacting me.</p>
+                    <input class="w-per-80 m-5 p-5 b-1 b-style-solid b-blue" type="name" name="name" placeholder="What is your name?" required>
+                    <input class="w-per-80 m-5 p-5 b-1 b-style-solid b-blue" type="email" name="mail" placeholder="What is your email?" required>
+                    <input class="w-per-80 m-5 p-5 b-1 b-style-solid b-blue" type="text" name="subject" placeholder="What is the subject of the email?" required>
+                    <textarea class="w-per-80 m-5 p-5 b-1 b-style-solid b-blue h-200" name="message" placeholder="What would you like to send?" required></textarea>
+                </div>
+                <div>
+                    <button class="w-per-100 b-style-none bg-color-purple no-decor p-10 m-t-5 m-b-5" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

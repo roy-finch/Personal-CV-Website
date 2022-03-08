@@ -1,0 +1,52 @@
+.flex-div-48 {
+    width: 48%;
+    display: inline-flex;
+}
+.flex-div-73 {
+    width: 73%;
+    display: inline-flex;
+}
+.flex-div-25 {
+    width: 25%;
+    display: inline-flex;
+}
+.text-center {
+    text-align: center;
+}
+.vertical-middle {
+    vertical-align: top;
+}
+.b-blue {
+    border-color: blue;
+}
+.circle {
+    border-radius: 200px;
+    padding: 2px;
+    width: 33%;
+    height: 33%;
+}
+.indent {
+    text-indent: 20px;
+}
+.no-decor {
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+.bg-color-purple {
+    background-color: blue;
+}
+.bg-color-white {
+    background-color: white;
+}
+.hide {
+    display: none;
+}
+.nav-div {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
