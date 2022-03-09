@@ -10,3 +10,27 @@ function showHide(id) {
         button.setAttribute("val", "true");
     }
 }
+
+function show(id) {
+    var item = document.getElementById(id);
+    
+    item.style.display = "display";
+}
+
+function hide(id) {
+    var item = document.getElementById(id);
+
+    item.style.display = "none";
+}
+
+function setAttr(id, attr, value) {
+    var item = document.getElementById(id);
+
+    item.setAttribute(attr, value);
+}
+
+function getAttr(id, attr) {
+    var item = document.getElementById(id);
+
+    return item.getAttribute(attr);
+}

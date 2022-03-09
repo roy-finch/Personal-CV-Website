@@ -59,7 +59,7 @@ def css(nicknames=[]):
             for y in range(0, len(val[functions[x]])-1):
                 out += "."+nicknames[x]+"-"+val[functions[x]][y]+" {\n\t"+functions[x]+": "+val[functions[x]][y]+";\n}\n"
         elif ("width" in functions[x] or "height" in functions[x]):
-            out += "."+nicknames[x]+"-none {\n\t"+functions[x]+": auto;\n}\n"
+            out += nicknames[x]+"-none {\n\t"+functions[x]+": auto;\n}\n"
             for z in range(0, 2):
                 for y in range(1, 1000):
                     if z == 0:
@@ -76,6 +76,44 @@ def css(nicknames=[]):
             b = 0
             for a in range(0, 52*52*52+1):
                 out += "."+nicknames[x]+"-r"+str(r)+"g"+str(g)+"b"+str(b)+" {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 0 and g == 0 and b == 0):
+                    out += "."+nicknames[x]+"-black {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 255 and g == 255 and b == 255):
+                    out += "."+nicknames[x]+"-white {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 255 and g == 0 and b == 0):
+                    out += "."+nicknames[x]+"-red {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 0 and g == 255 and b == 0):
+                    out += "."+nicknames[x]+"-lime {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 0 and g == 0 and b == 255):
+                    out += "."+nicknames[x]+"-blue {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 255 and g == 255 and b == 0):
+                    out += "."+nicknames[x]+"-yellow {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 0 and g == 255 and b == 255):
+                    out += "."+nicknames[x]+"-cyan {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 255 and g == 0 and b == 255):
+                    out += "."+nicknames[x]+"-magenta {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 190 and g == 190 and b == 190):
+                    out += "."+nicknames[x]+"-silver {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 120 and g == 120 and b == 120):
+                    out += "."+nicknames[x]+"-grey {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 125 and g == 0 and b == 0):
+                    out += "."+nicknames[x]+"-maroon {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 125 and g == 125 and b == 0):
+                    out += "."+nicknames[x]+"-olive {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 0 and g == 125 and b == 0):
+                    out += "."+nicknames[x]+"-green {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 125 and g == 0 and b == 125):
+                    out += "."+nicknames[x]+"-purple {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 0 and g == 125 and b == 125):
+                    out += "."+nicknames[x]+"-teal {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 0 and g == 0 and b == 125):
+                    out += "."+nicknames[x]+"-navy {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 255 and g == 165 and b == 0):
+                    out += "."+nicknames[x]+"-orange {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 75 and g == 0 and b == 130):
+                    out += "."+nicknames[x]+"-indigo {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
+                if (r == 235 and g == 130 and b == 235):
+                    out += "."+nicknames[x]+"-violet {\n\t"+functions[x]+": rgb("+str(r)+", "+str(g)+", "+str(b)+");\n}\n"
                 b += 5
                 if b == 260:
                     b = 0
